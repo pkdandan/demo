@@ -1,12 +1,21 @@
 package com.sgl.demo.model;
 
-public class Bird extends Animal{
+public class Bird implements WalkAnimal, FlyAnimal, SingingAnimal{
 
-    void fly(){
+    @Override
+    public String getName() {
+        return "Bird";
+    }
+
+    public void walk(){
+        System.out.println("I am Walking");
+    }
+
+    public void fly(){
         System.out.println("I am flying");
     }
 
-    void sing(){
+    public void sing(){
         System.out.println("I am Singing");
     }
 
