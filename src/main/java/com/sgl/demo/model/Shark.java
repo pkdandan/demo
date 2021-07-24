@@ -1,5 +1,8 @@
 package com.sgl.demo.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Shark extends Fish{
 
     @Override

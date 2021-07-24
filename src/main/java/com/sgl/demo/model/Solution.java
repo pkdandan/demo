@@ -1,7 +1,10 @@
 package com.sgl.demo.model;
 
+import com.sgl.demo.utils.Util;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
 
@@ -35,5 +38,8 @@ public class Solution {
         System.out.println("no of fly animals:" + flyAnimalCount);
         System.out.println("no of swim animals:" + swimAnimalCount);
         System.out.println("no of sing animals:" + singAnimalCount);
+
+        Rooster rooster = new Rooster();
+        rooster.sing();
     }
 }

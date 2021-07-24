@@ -1,5 +1,8 @@
 package com.sgl.demo.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ClownFish extends Fish{
     @Override
     public String getName() {
